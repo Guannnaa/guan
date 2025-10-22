@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enda Şenol | About</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- (Varsa çalışırsa kullansın) OpenLayers CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@6.15.1/ol.css">
+  <script src="https://cdn.jsdelivr.net/npm/ol@6.15.1/dist/ol.js"></script>
+</head>
+<body class="page-about">
+  <div id="bg"></div>
+
+  <header class="site-header">
+    <nav class="nav">
+      <div class="brand"><span class="dot"></span> <span>Enda Şenol</span></div>
+      <a href="index.html" aria-current="page">About</a>
+      <a href="technologies.html">Technologies</a>
+      <a href="projects.html">Projects</a>
+
+      <a class="icon-link" href="https://github.com/endassenol" target="_blank" rel="noopener" aria-label="GitHub: endassenol" title="GitHub: endassenol">
+        <svg viewBox="0 0 16 16" aria-hidden="true">
+          <path d="M8 .2a8 8 0 0 0-2.5 15.6c.4.1.5-.2.5-.4v-1.4c-2 .4-2.4-.9-2.4-.9-.3-.7-.8-.9-.8-.9-.7-.5 0-.5 0-.5.8.1 1.2.8 1.2.8.7 1.2 1.9 .8 2.4 .6 .1-.5 .3-.8 .5-.9-1.6-.2-3.3-.8-3.3-3.6 0-.8 .3-1.4 .8-1.9-.1-.2-.3-1 .1-2 0 0 .6-.2 2 .8 .6-.2 1.2-.3 1.8-.3 .6 0 1.2 .1 1.8 .3 1.4-1 2-.8 2-.8 .4 1 .2 1.8 .1 2 .5 .5 .8 1.1 .8 1.9 0 2.8 -1.7 3.4 -3.3 3.6 .3 .2 .6 .7 .6 1.4v2c0 .2 .1 .5 .6 .4A8 8 0 0 0 8 .2z"/>
+        </svg>
+      </a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero grid-2">
+      <article class="card">
+        <div class="about">
+          <div class="avatar-wrap">
+            <img class="avatar" src="enda.jpg" alt="Portrait of Enda Şenol">
+          </div>
+          <div class="about-text">
+            <h1 class="gradient">Hi, I’m Enda Şenol.</h1>
+            <p>
+              I’m a Geomatics (Geospatial & GIS) Engineering student at Hacettepe University. I focus on GIS, photogrammetry,
+              remote sensing, spatial data analysis, and web mapping.
+            </p>
+            <p>
+              I completed my first internship at <strong>YMN Project Development</strong> on photogrammetry (image processing,
+              orthophoto generation, and 3D modeling). My second internship was at <strong>Başarsoft</strong>, where I worked on
+              geospatial data production, spatial analysis, and map-based software systems. I also attended the <strong>HKMO</strong>
+              software camp, reinforcing my skills and exploring new tools and technologies.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <aside class="card">
+        <h2>Campus Map</h2>
+        <p><strong>Beytepe Campus</strong> — Hacettepe University</p>
+        <div id="map"></div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">© <span id="y"></span> Enda Şenol — Portfolio Website</footer>
+
+  <!-- Güncellenmiş app.js -->
+  <script src="app.js"></script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

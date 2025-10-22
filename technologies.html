@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enda Şenol | Technologies</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-tech">
+  <div id="bg"></div>
+
+  <header class="site-header">
+    <nav class="nav">
+      <div class="brand"><span class="dot"></span> <span>Enda Şenol</span></div>
+      <a href="index.html">About</a>
+      <a href="technologies.html" aria-current="page">Technologies</a>
+      <a href="projects.html">Projects</a>
+
+      <a class="icon-link" href="https://github.com/endassenol" target="_blank" rel="noopener" aria-label="GitHub: endassenol" title="GitHub: endassenol">
+        <svg viewBox="0 0 16 16" aria-hidden="true">
+          <path d="M8 .2a8 8 0 0 0-2.5 15.6c.4.1.5-.2.5-.4v-1.4c-2 .4-2.4-.9-2.4-.9-.3-.7-.8-.9-.8-.9-.7-.5 0-.5 0-.5.8.1 1.2.8 1.2.8.7 1.2 1.9 .8 2.4 .6 .1-.5 .3-.8 .5-.9-1.6-.2-3.3-.8-3.3-3.6 0-.8 .3-1.4 .8-1.9-.1-.2-.3-1 .1-2 0 0 .6-.2 2 .8 .6-.2 1.2-.3 1.8-.3 .6 0 1.2 .1 1.8 .3 1.4-1 2-.8 2-.8 .4 1 .2 1.8 .1 2 .5 .5 .8 1.1 .8 1.9 0 2.8 -1.7 3.4 -3.3 3.6 .3 .2 .6 .7 .6 1.4v2c0 .2 .1 .5 .6 .4A8 8 0 0 0 8 .2z"/>
+        </svg>
+      </a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>Technologies</h1>
+      <p>My core tools and proficiency levels:</p>
+
+      <div class="table-wrap">
+        <table class="table-plain">
+          <thead>
+            <tr>
+              <th>Technology</th>
+              <th>Description</th>
+              <th>Level</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Python</strong></td><td>Data processing, web scraping, GIS automation</td><td><div class="progress" data-val="85%"><span></span></div></td></tr>
+            <tr><td><strong>QGIS</strong></td><td>Vector/raster analysis, cartography</td><td><div class="progress" data-val="80%"><span></span></div></td></tr>
+            <tr><td><strong>NetCAD</strong></td><td>Engineering maps, mine/road drafting</td><td><div class="progress" data-val="75%"><span></span></div></td></tr>
+            <tr><td><strong>PostgreSQL / PostGIS</strong></td><td>Spatial databases</td><td><div class="progress" data-val="70%"><span></span></div></td></tr>
+            <tr><td><strong>OpenLayers</strong></td><td>Web mapping</td><td><div class="progress" data-val="65%"><span></span></div></td></tr>
+            <tr><td><strong>JavaScript</strong></td><td>Interactive web apps</td><td><div class="progress" data-val="60%"><span></span></div></td></tr>
+            <tr><td><strong>Agisoft Metashape</strong></td><td>Photogrammetric 3D point clouds</td><td><div class="progress" data-val="70%"><span></span></div></td></tr>
+            <tr><td><strong>MapInfo</strong></td><td>Thematic cartography</td><td><div class="progress" data-val="50%"><span></span></div></td></tr>
+            <tr><td><strong>AI / Machine Learning</strong></td><td>Insights from geospatial data</td><td><div class="progress" data-val="55%"><span></span></div></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">© <span id="y"></span> Enda Şenol — Technologies</footer>
+  <script src="app.js"></script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
+
+
+
